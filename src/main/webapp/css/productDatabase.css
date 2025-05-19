@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  font-size: 13px;
+}
+
+.header {
+  background-color: #e3ddc9;
+  padding: 8px 24px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-links a, .right-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.right-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.profile-info p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.profile-info small {
+  font-size: 11px;
+}
+
+
+.user-database-container form {
+	background-color: #7f8d6d;
+  padding: 20px;
+  display: flex;
+  
+  
+ 
+  width: auto;
+  gap: 10px;
+   
+  align-items: center;
+}
+
+/* Modify existing search-bar rule */
+.search-bar {
+  flex: 1;
+  min-width: 260px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  border: none;
+  /* Remove margin-right */
+}
+
+/* Keep controls rule but add this */
+.controls {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+  align-items: center; /* Add vertical alignment */
+}
+
+/* Rest of your existing CSS below... */
+.highlighted {
+    background-color: #7f8d6d;
+    order: -1;
+}
+
+.search-btn,
+.filter-btn {
+  padding: 8px 12px;
+  font-size: 12px;
+  background-color: #f3f1ea;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.search-btn img,
+.filter-btn img {
+  width: 14px;
+  height: 14px;
+}
+
+.user-database {
+  padding: 20px;
+  background-color: #c7b99f;
+  overflow-x: auto;  /* Allow horizontal scrolling if needed */
+}
+
+.user-database h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.tabs span {
+  cursor: pointer;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.tabs span.active {
+  border-color: #000;
+}
+
+.user-database table {
+  width: 100%; /* Ensure the table takes the full width of its container */
+  table-layout: fixed; /* Force columns to have an equal width */
+  border-collapse: collapse;
+  background-color: #eceff0;
+  border: 1px solid #c0c0c0;
+  border-radius: 6px;
+}
+
+.user-database th,
+.user-database td {
+  padding: 10px;
+  border-bottom: 1px solid #c0c0c0;
+  text-align: left;
+  font-size: 13px;
+  word-wrap: break-word; /* Ensure text wraps inside cells */
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+.user-database thead {
+  background-color: #e2ded5;
+}
+
+.product-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.product-actions button {
+  padding: 6px 14px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.product-actions img {
+  width: 14px;
+  height: 14px;
+}
+

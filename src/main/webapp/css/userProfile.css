@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #e3ddc9;
+}
+
+/* Header */
+.header {
+  background-color: #e3ddc9;
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-links a,
+.right-links a {
+  margin: 0 14px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.right-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.search-icon img {
+  width: 12px;
+  height: 12px;
+}
+
+/* Messages */
+.message-container {
+    margin: 15px auto;
+    max-width: 800px;
+}
+
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 12px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+/* Profile Section */
+.profile-section {
+  background: #5d6c56;
+  padding: 20px;
+  margin: 10px auto 20px;
+  width: 94%;
+  height:250px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.profile-container {
+  display: flex;
+  margin-right: 80px; /* pushing buttons further */
+  align-items: center;
+  gap: 60px; /* control the space between profile and buttons */
+  padding-left: 40px; /* push profile and name to the right */
+}
+
+
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px
+}
+
+.profile-name {
+  color: white;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.profile-buttons {
+   display: flex;
+  gap: 20px;
+}
+.update-photo {
+  background-color: #f1edce;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.delete-photo {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Info Section */
+.info-section {
+  background: #aea594;
+  padding: 30px;
+  width: 85%;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.info-section h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-box label {
+  color: white;
+  font-weight: bold;
+}
+
+.info-box input {
+  padding: 10px;
+  border: none;
+  background: #d8d8d8;
+  border-radius: 8px;
+}
+
+/* Edit Section */
+.edit-section {
+  background: #aea594;
+  padding: 30px;
+  width: 85%;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.edit-section h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.edit-box {
+  margin-bottom: 30px;
+}
+
+.edit-box h3 {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+
+.icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+
+.edit-box input {
+  width: 240px;
+  margin: 5px 5px 10px 0;
+  padding: 10px;
+  border: none;
+  background: #d8d8d8;
+  border-radius: 8px;
+}
+
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* gap between inputs and button */
+  margin-top: 15px; /* some space below heading */
+}
+
+.input-row input {
+  flex: 1; /* input boxes take equal width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.proceed-button {
+  padding: 10px 20px;
+  background-color: #f5f0d7;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.proceed-button:hover {
+  background-color: #e2dcc7;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #5d6c56;
+  color: white;
+  font-size: 13px;
+  padding: 30px 24px;
+  width: 94%;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 250px; 
+  margin-bottom:28px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-top > div {
+  flex: 1 1 180px;
+  margin: 10px;
+}
+
+.footer h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 6px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.footer-contact-group {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-info span {
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.footer-info img {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-copy {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 20px;
+  font-size: 12px;
+}

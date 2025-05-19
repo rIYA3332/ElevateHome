@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:#e3ddc9;
+  color: #000;
+  overflow-x: hidden;
+  font-size: 13px;
+}
+/* Header */
+.header {
+  background-color: #e3ddc9;
+  padding: 8px 16px;
+  font-size: 13px;
+ 
+  
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-links a,
+.right-links a {
+  margin: 0 14px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.right-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.search-icon img {
+  width: 12px;
+  height: 12px;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+/**/
+.about-hero {
+    background-color: #5d6c56;
+  color: white;
+  padding: 0 24px;
+  width: 94%;
+  margin: 0 auto 28px auto;
+  border-radius: 10px;
+  height: 300px;
+  position: relative; /* Important for absolute positioning of image */
+  overflow: visible;   /* Allow overflow of lamp */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero h1 {
+  font-size: 44px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Left: About Us Text */
+.about-left {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.about-left h1 {
+  font-size: 44px;
+  margin: 0;
+  color: white;
+}
+
+/* Middle: Wall Art Above Sofa */
+.wallpaper-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+  display: flex;
+  gap: 12px;
+  z-index: 2;
+}
+
+.about-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Group for the wall art images */
+.art-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.wall-art {
+ display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  z-index: 3;
+}
+
+.wall-art-img {
+  width: 160px;
+  height: auto;
+  border-radius: 6px;
+  margin-left:260px;
+}
+
+.cat-art {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-top:35px;
+  
+  
+}
+
+
+/* Sofa at the center bottom */
+.sofa {
+  width: 500px;
+  position: absolute;
+  left: 60%;
+  bottom: -170px;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* Lamp on the right */
+.lamp {
+  position: absolute;
+  right: 0;
+  bottom: -80px; /* Pushes only the bottom part outside */
+  height: 410px;  /* Adjusted height to keep the head inside */
+  z-index: 1;
+      /* Bring lamp over background but behind text */
+}
+
+/* About Main Section */
+.about-main {
+  background-color: #e3ddc9;
+  padding: 100px 60px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.about-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.about-row.reverse {
+  direction: rtl;
+}
+
+.about-row.reverse > * {
+  direction: ltr;
+}
+
+.about-text h2 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.about-text p {
+  font-size: 13px;
+  color: #999;
+  line-height: 1.6;
+}
+
+.about-box {
+  background-color: #aea594;
+  color: white;
+  padding: 20px 24px;
+  border-radius: 6px;
+}
+
+.about-box h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-box p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+
+/* Footer */
+.footer {
+  background-color: #5d6c56;
+  color: white;
+  font-size: 13px;
+  padding: 30px 24px;
+  width: 94%;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 250px; 
+  margin-bottom:28px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 120px;
+  margin-bottom: 20px;
+}
+
+.footer-top > div {
+  flex: 1 1 180px;
+  margin: 10px;
+}
+
+.footer h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 6px;
+}
+
+.footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.footer-contact-group {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-info span {
+  display: inline-flex;
+  align-items: center;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.footer-info img {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-copy {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 20px;
+  font-size: 12px;
+}
